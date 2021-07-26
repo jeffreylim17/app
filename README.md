@@ -1,4 +1,5 @@
 mvn clean install spring-boot:run </br>
+Go to http://localhost:8000/swagger-ui.html </br>
 Create user </br>
 /** id's are auto generated **/ </br>
 {
