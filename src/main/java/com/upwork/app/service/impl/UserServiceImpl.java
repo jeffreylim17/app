@@ -43,7 +43,9 @@ public class UserServiceImpl implements UserService {
 
   @Override
   public ResponseEntity<Void> updateUser(User user) {
-    userMapper.entityToDto(userRepository.save(userMapper.dtoToEntity(user)));
+    userMapper.entityToDto(
+        userRepository.save(
+            userMapper.dtoToEntity(user)));
     return ResponseEntity.noContent().build();
   }
 
